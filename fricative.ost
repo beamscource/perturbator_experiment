@@ -1,0 +1,11 @@
+# Online status tracking (OST) configuration file for VCV where C is a ficative
+rmsSlopeWin = 0.030000
+
+# Main section: Heuristic rules for tracking
+n = 4
+0 INTENSITY_RISE_HOLD 0.02 0.05 {} # Detect voise onset
+2 INTENSITY_RATIO_RISE 0.3 0.02 {} # Detect fricative onset 
+4 INTENSITY_RATIO_FALL_HOLD 0.6 0.02 {} # Detect fricative offset
+6 OST_END NaN NaN {}
+
+n = 0
